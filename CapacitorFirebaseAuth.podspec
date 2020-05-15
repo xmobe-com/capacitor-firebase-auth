@@ -11,7 +11,7 @@
     s.ios.deployment_target  = '11.0'
     s.dependency 'Capacitor'
     s.dependency 'GoogleSignIn'
-    s.dependency 'TwitterKit'
+    s.dependency 'TwitterKit5'
     s.dependency 'FBSDKCoreKit'
     s.dependency 'FBSDKLoginKit'
     s.dependency 'Firebase/Core'

@@ -9,7 +9,7 @@ target 'Plugin' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
-  pod 'TwitterKit'
+  pod 'TwitterKit5'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
 
@@ -23,7 +23,7 @@ target 'PluginTests' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
-  pod 'TwitterKit'
+  pod 'TwitterKit5'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
 
