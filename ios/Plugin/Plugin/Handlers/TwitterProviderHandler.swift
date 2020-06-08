@@ -67,12 +67,13 @@ class TwitterProviderHandler: NSObject, ProviderHandler {
     
     func signOut() {
         DispatchQueue.global(qos: .background).async {
-        // Background Thread
-        DispatchQueue.main.async { 
-            guard let session = TWTRTwitter.sharedInstance().sessionStore.session() else {
-                return;
+            // Background Thread
+            DispatchQueue.main.async { 
+                guard let session = TWTRTwitter.sharedInstance().sessionStore.session() else {
+                    return;
+                }
+                TWTRTwitter.sharedInstance().sessionStore.logOutUserID(session.userID)
             }
-            TWTRTwitter.sharedInstance().sessionStore.logOutUserID(session.userID)
         }
     }
 }
